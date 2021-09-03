@@ -1,0 +1,23 @@
+p{ /*especificidade por tipo - 001*/
+    color: blue;
+}
+
+.classe1{ /*especificidade por classse - 010*/
+    color: yellow;
+}
+
+#id1{ /*especificidade por id - 100*/
+    color: red;
+}
+
+article p{ /*especificidade por 2 tipos - 002*/
+    color: red;
+}
+
+.comentario p{ /*especificidade por classe e tipo - 011*/
+    color: yellow;
+}
+
+.comentario > p#id1{/*especificidade por id, classe e tipo - 111*/
+    color: blueviolet;
+}
